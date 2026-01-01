@@ -1,27 +1,8 @@
 package main
 
-import (
-	"log"
-	"time"
-)
+import "log"
 
-var s = "seven"
-
-type User struct{
-	FirstName string 
-	LastName string 
-	PhoneNumber string
-	Age int
-	BirthDate time.Time
-}
-
+ 
 func main() {
-
-	user := User {
-		FirstName: "Trevor",
-		LastName: "Sawler",
-	}
-
-	log.Println(user.FirstName, user.LastName, "DOB:", user.BirthDate)
-	
-}                                           
+ 
+}
