@@ -1,0 +1,16 @@
+
+func main() {
+
+	var s2 = "six"
+
+	log.Println("s1 is ", s)
+	log.Println("s2 is ", s2)
+
+	saySomething("xxx")
+}
+
+func saySomething(s3 string) (string, string) {
+	log.Println("from the func",s)
+	return s3, "World"
+
+}
