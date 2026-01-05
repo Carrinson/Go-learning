@@ -8,8 +8,8 @@ import (
 
 func main() {
 
-
-
+wdjkefle
+gfgdffewwefsa
 	// shorthabd way of declaring slices 
 	numbers := []int {1,2,3,4,5,6,7,8,9,10}
 
