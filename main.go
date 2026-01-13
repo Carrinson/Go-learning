@@ -2,41 +2,57 @@ package main
 
 import (
 	"log"
-//	"sort"
 )
-
 
 func main() {
 
-wdjkefle
-gfgdffewwefsa
-	// shorthabd way of declaring slices 
-	numbers := []int {1,2,3,4,5,6,7,8,9,10}
+	myVar := "ree"
 
-	log.Println(numbers)
+	switch myVar {
 
-	//printing a range of values (in slices)
-
-	log.Println(numbers[4:8])
+	case "cat":
+		log.Println("Cat is set to cat")
+	case "dog":
+		log.Println("cat is set to dog")
 
 
-	// // Slice of strings and integers
-	// var mySlice []string
-	// var mySliceInt []int
-	// mySlice = append(mySlice, "Trevor")
-	// mySlice = append(mySlice, "John")
+	case "fish":
+		log.Println("cat is set to fish")
+		
+	default:
+		log.Println("Cat is Something else")
+	}
+	
+	// If Statements
 
-	// mySliceInt = append(mySliceInt, 16)
-	// mySliceInt = append(mySliceInt, 18)
-	// mySliceInt = append(mySliceInt, 19)
-	// mySliceInt = append(mySliceInt, 17)
+	myNum := 100
+	isTrue := false
 
-	// sort.Strings(mySlice)
+	if myNum > 99 && !isTrue{
+		log.Println("myNum is greater than 99 and isTrue is set to true")
+	} else if myNum < 100 && isTrue{
+		log.Println("1")
+	}else{
+		log.Println("an else statements")
+	}
 
-	// log.Println(mySlice)
+	cat := "cat"
 
-	// sort.Ints(mySliceInt)
+	if cat == "cat"{
+		log.Println("Cat is cat")
+	}else{
+		log.Println("Cat is not cat")
+	}
 
-	// log.Println(mySliceInt)
+	if state 1
+	var isTrue bool
+
+	isTrue = true
+
+	if isTrue == true{
+		log.Println("isTrue is", isTrue)
+	}else{
+		log.Println("isTrue is", isTrue)
+	}
 
 }
