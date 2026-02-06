@@ -1,69 +1,6 @@
 package main
 
-import (
-	"log"
-)
 
 func main() {
-
-	type User struct {
-		FirstName string 
-		LastName string 
-		Email string 
-		Age int 
-	}
 	
-	var users []User 
-	users = append(users, User{"John", "Smith", "john@smith.com", 30})
-	users = append(users, User{"Mary", "Jones", "mary@smith.com", 20})
-	users = append(users, User{"Sally", "Brown", "sally@smith.com", 45})
-	users = append(users, User{"Alex", "Anderson", "alex@smith.com", 17})
-	
-	for _, l := range users {
-		log.Println(l.FirstName, l.LastName, l.Email, l.Age)
-	}
-	
-	var firstLine = "Once upon a midnight dreary"
-	
-	for i, l := range firstLine{
-		log.Println(i, ":", l)
-	}
-	
-	
-	animal := make(map[string]string)
-	animal["dog"] = "Fido"
-	animal["cat"] = "Fluffy"
-	
-	for animalType, animal := range animal {
-			log.Println(animalType, animal)
-	}
-	
-	
-	animal := []string{"dog", "fish","horse","cow","cat"}
-	
-	for _, animal := range animal {
-		log.Println(animal)
-	
-	
-		for i := 0; i<=15; i++ {
-			log.Println(i)
-		}
-
-
-
 }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
