@@ -1,0 +1,27 @@
+package main
+
+import (
+	"log"
+
+	"github.com/Carrinson/Go-learning.git/helpers"
+)
+
+func main() {
+	log.Println("Hello")
+
+	var myVar helpers.SomeType
+	myVar.TypeName = "Some Name"
+	log.Println(myVar.TypeName)
+}
+
+
+
+      #  in a seperate folder create a file helper folder name also helper  and the code below goes into there then it is imported in the main.go  # 
+      
+      
+package helpers
+
+type SomeType struct {
+	TypeName   string
+	TypeNumber int
+}
