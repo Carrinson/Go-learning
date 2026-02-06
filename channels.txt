@@ -1,0 +1,40 @@
+package main
+
+import (
+	"log"
+
+	"github.com/Carrinson/Go-learning.git/helpers"
+)
+
+// how to creating a channel in go
+
+const numPool = 10
+func CalculateValue(intChan chan int){
+	randomNumber := helpers.RandomNumber(numPool)
+	intChan <- randomNumber
+}
+
+func main() {
+	intChan := make(chan int) 
+	defer close(intChan)
+	
+// go routine
+	go CalculateValue(intChan)
+
+	num := <- intChan
+	log.Println(num)
+}
+
+
+      #  in a seperate folder create a file helper folder name also helper  and the code below goes into there then it is imported in the main.go  # 
+
+
+package helpers
+
+import "math/rand"
+
+func RandomNumber(n int) int {
+	
+	value := rand.Intn(n)
+	return value
+}
